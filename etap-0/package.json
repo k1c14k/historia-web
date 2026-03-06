@@ -1,0 +1,12 @@
+{
+  "name": "etap-0",
+  "version": "1.0.0",
+  "description": "Stage 0: Pure Static HTML Generation (Web 1.0)",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve public"
+  },
+  "devDependencies": {
+    "serve": "^14.2.6"
+  }
+}

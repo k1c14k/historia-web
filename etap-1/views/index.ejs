@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Historia Stron - Etap 1 (Refactor)</title>
+</head>
+
+<body
+    style="background-color: #f4f4f4; font-family: 'Courier New', Courier, monospace; display: flex; justify-content: center; padding-top: 50px;">
+    <form action="/" method="POST">
+        <!-- State management -->
+        <input type="hidden" name="hiddenDisplay" value="<%= display %>">
+        <input type="hidden" name="prevValue" value="<%= prevValue %>">
+        <input type="hidden" name="operator" value="<%= operator %>">
+        <input type="hidden" name="resetNext" value="<%= resetNext %>">
+
+        <table border="1" cellpadding="10" cellspacing="0"
+            style="background-color: #fff; border-collapse: collapse; box-shadow: 5px 5px 0px #888;">
+            <tr>
+                <td colspan="4" align="center" style="background-color: #333; color: #fff;">
+                    <h2 style="margin: 0;">KALKULATOR v1.0</h2>
+                    <p style="font-size: 10px; margin: 0;">Etap 1: Tabele + Backend (POST)</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="text" value="<%= display || '0' %>" readonly
+                        style="width: 100%; box-sizing: border-box; font-size: 24px; text-align: right; padding: 10px; background-color: #e0e0e0; border: 2px inset #999;">
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit" name="btn" value="7"
+                        style="width: 50px; height: 50px; font-weight: bold;">7</button></td>
+                <td><button type="submit" name="btn" value="8"
+                        style="width: 50px; height: 50px; font-weight: bold;">8</button></td>
+                <td><button type="submit" name="btn" value="9"
+                        style="width: 50px; height: 50px; font-weight: bold;">9</button></td>
+                <td><button type="submit" name="btn" value="/"
+                        style="width: 50px; height: 50px; font-weight: bold; background-color: #ffcc00;">/</button></td>
+            </tr>
+            <tr>
+                <td><button type="submit" name="btn" value="4"
+                        style="width: 50px; height: 50px; font-weight: bold;">4</button></td>
+                <td><button type="submit" name="btn" value="5"
+                        style="width: 50px; height: 50px; font-weight: bold;">5</button></td>
+                <td><button type="submit" name="btn" value="6"
+                        style="width: 50px; height: 50px; font-weight: bold;">6</button></td>
+                <td><button type="submit" name="btn" value="*"
+                        style="width: 50px; height: 50px; font-weight: bold; background-color: #ffcc00;">*</button></td>
+            </tr>
+            <tr>
+                <td><button type="submit" name="btn" value="1"
+                        style="width: 50px; height: 50px; font-weight: bold;">1</button></td>
+                <td><button type="submit" name="btn" value="2"
+                        style="width: 50px; height: 50px; font-weight: bold;">2</button></td>
+                <td><button type="submit" name="btn" value="3"
+                        style="width: 50px; height: 50px; font-weight: bold;">3</button></td>
+                <td><button type="submit" name="btn" value="-"
+                        style="width: 50px; height: 50px; font-weight: bold; background-color: #ffcc00;">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="submit" name="btn" value="0"
+                        style="width: 50px; height: 50px; font-weight: bold;">0</button></td>
+                <td><button type="submit" name="btn" value="C"
+                        style="width: 50px; height: 50px; font-weight: bold; background-color: #ff6666;">C</button></td>
+                <td><button type="submit" name="btn" value="="
+                        style="width: 50px; height: 50px; font-weight: bold; background-color: #66ff66;">=</button></td>
+                <td><button type="submit" name="btn" value="+"
+                        style="width: 50px; height: 50px; font-weight: bold; background-color: #ffcc00;">+</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

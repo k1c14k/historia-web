@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Historia Stron - Etap 2 (Refactor)</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <form action="/" method="POST">
+        <input type="hidden" name="hiddenDisplay" value="<%= display %>">
+        <input type="hidden" name="prevValue" value="<%= prevValue %>">
+        <input type="hidden" name="operator" value="<%= operator %>">
+        <input type="hidden" name="resetNext" value="<%= resetNext %>">
+
+        <table class="calc-table">
+            <tr>
+                <td colspan="4" align="center" class="calc-header">
+                    <h2>KALKULATOR v2.0</h2>
+                    <p>Etap 2: Tabele + CSS + Backend</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="text" value="<%= display || '0' %>" readonly class="display-input">
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit" name="btn" value="7" class="calc-btn">7</button></td>
+                <td><button type="submit" name="btn" value="8" class="calc-btn">8</button></td>
+                <td><button type="submit" name="btn" value="9" class="calc-btn">9</button></td>
+                <td><button type="submit" name="btn" value="/" class="calc-btn btn-op">/</button></td>
+            </tr>
+            <tr>
+                <td><button type="submit" name="btn" value="4" class="calc-btn">4</button></td>
+                <td><button type="submit" name="btn" value="5" class="calc-btn">5</button></td>
+                <td><button type="submit" name="btn" value="6" class="calc-btn">6</button></td>
+                <td><button type="submit" name="btn" value="*" class="calc-btn btn-op">*</button></td>
+            </tr>
+            <tr>
+                <td><button type="submit" name="btn" value="1" class="calc-btn">1</button></td>
+                <td><button type="submit" name="btn" value="2" class="calc-btn">2</button></td>
+                <td><button type="submit" name="btn" value="3" class="calc-btn">3</button></td>
+                <td><button type="submit" name="btn" value="-" class="calc-btn btn-op">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="submit" name="btn" value="0" class="calc-btn">0</button></td>
+                <td><button type="submit" name="btn" value="C" class="calc-btn btn-clear">C</button></td>
+                <td><button type="submit" name="btn" value="=" class="calc-btn btn-equal">=</button></td>
+                <td><button type="submit" name="btn" value="+" class="calc-btn btn-op">+</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
